@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="application.SampleController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Opções" />
+            <HBox prefHeight="23.0" prefWidth="380.0" spacing="10.0">
+               <children>
+                  <Button fx:id="AdicionarButton" mnemonicParsing="false" onAction="#adicionar" text="Adicionar" />
+                  <Button fx:id="EditarButton" mnemonicParsing="false" onAction="#editar" text="Editar" />
+                  <Button fx:id="ExcluirButton" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+               </children>
+            </HBox>
+            <Label text="Tarefas">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="TarefasListView" maxWidth="400.0" prefWidth="400.0" />
+            <Label text="Tarefa">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="TarefaTextField" maxWidth="400.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
